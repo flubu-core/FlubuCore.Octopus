@@ -4,7 +4,9 @@ using System.Text;
 
 namespace FlubuCore.Octopus
 {
-    class PackFormat
+    public enum PackFormat
     {
+        NuPkg,
+        Zip
     }
 }
