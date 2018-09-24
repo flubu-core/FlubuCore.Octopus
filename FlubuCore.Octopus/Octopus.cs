@@ -30,5 +30,10 @@ namespace FlubuCore.Octopus
         {
             return new OctopusDeployReleaseTask();
         }
+
+        public OctopusPromoteReleaseTask PromoteRelease(string project, string deployFrom, string deployTo)
+        {
+            return new OctopusPromoteReleaseTask(project, deployFrom, deployTo);
+        }
     }
 }
