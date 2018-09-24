@@ -20,5 +20,10 @@ namespace FlubuCore.Octopus
         {
             return new OctopusPushTask(packageIds);
         }
+
+        public OctopusCreateReleaseTask CreateRelease(string project)
+        {
+            return new OctopusCreateReleaseTask(project);
+        }
     }
 }
