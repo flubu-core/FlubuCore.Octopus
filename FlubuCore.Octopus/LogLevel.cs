@@ -11,6 +11,6 @@ namespace FlubuCore.Octopus
         Information,
         Warning,
         Error,
-        Fatal.
+        Fatal,
     }
 }
