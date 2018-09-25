@@ -6,11 +6,11 @@
 
 FlubuCore.Octopus is a [FlubuCore](https://github.com/flubu-core/flubu.core) plugin adds octopus specific tasks.
 
-Plugin adds octopus tasks to FlubuCore ``` ITaskContext ``` interface:  ``` context.Tasks().Octopus() ```
+Plugin adds octopus tasks to FlubuCore ``` ITaskContext ``` interface:  ``` context.Tasks().Octopus().Pack("packageId"); ```
 
-Plugin adds Following tasks:
-* OctopusPackTask.cs
-* OctopusPushTask
-* OctopusCreateReleaseTask
-* OctopusDeployReleaseTask
-* OctopusPromoteReleaseTask
+Plugin adds tasks for following octopus CLI commands :
+* Pack
+* Push
+* Create
+* Deploy
+* PromoteRelease
