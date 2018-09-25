@@ -61,42 +61,74 @@ namespace FlubuCore.Octopus
             return this;
         }
 
+        /// <summary>
+        /// A folder containing NuGet packages from which we should get versions.
+        /// </summary>
+        /// <param name="folder"></param>
+        /// <returns></returns>
         public OctopusCreateReleaseTask PackagesFolder(string folder)
         {
             WithArgumentsValueRequired("--packagesFolder", folder);
             return this;
         }
 
+        /// <summary>
+        /// Release Notes for the new release. Styling with Markdown is supported.
+        /// </summary>
+        /// <param name="releaseNotes"></param>
+        /// <returns></returns>
         public OctopusCreateReleaseTask ReleaseNotes(string releaseNotes)
         {
             WithArgumentsValueRequired("--releasenotes", releaseNotes);
             return this;
         }
 
+        /// <summary>
+        ///  Path to a file that contains Release Notes for the new release. Supports Markdown files.
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
         public OctopusCreateReleaseTask ReleaseNotesFile(string file)
         {
             WithArgumentsValueRequired("--releasenotesfile", file);
             return this;
         }
 
+        /// <summary>
+        /// Don't create this release if there is already one with the same version number.
+        /// </summary>
+        /// <returns></returns>
         public OctopusCreateReleaseTask IgnoreExisting()
         {
             WithArguments("--ignoreexisting");
             return this;
         }
 
+        /// <summary>
+        /// Create the release ignoring any version rules specified by the channel.
+        /// </summary>
+        /// <returns></returns>
         public OctopusCreateReleaseTask IgnoreChannelRules()
         {
             WithArguments("--ignorechannelrules");
             return this;
         }
 
+        /// <summary>
+        /// Pre-release for latest version of all packages to use for this release.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public OctopusCreateReleaseTask PackagePrerelease(string value)
         {
             WithArgumentsValueRequired("--packageprerelease", value);
             return this;
         }
 
+        /// <summary>
+        /// Perform a dry run but don't actually create/deploy release.
+        /// </summary>
+        /// <returns></returns>
         public OctopusCreateReleaseTask WhatIf()
         {
             WithArguments("--whatif");

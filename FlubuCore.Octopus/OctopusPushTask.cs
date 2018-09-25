@@ -33,6 +33,11 @@ namespace FlubuCore.Octopus
             return this;
         }
 
+        /// <summary>
+        /// utput format, only valid option is json
+        /// </summary>
+        /// <param name="format"></param>
+        /// <returns></returns>
         public OctopusPushTask OutputFormat(string format)
         {
             WithArgumentsValueRequired("--outputFormat", format);
