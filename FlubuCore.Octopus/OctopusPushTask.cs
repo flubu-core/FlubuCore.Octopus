@@ -22,6 +22,11 @@ namespace FlubuCore.Octopus
             }
         }
 
+        /// <summary>
+        /// If the package already exists in the repository, the default behavior is to reject the new package being pushed.
+        /// You can pass this flag to overwrite the existing package.
+        /// </summary>
+        /// <returns></returns>
         public OctopusPushTask ReplaceExisting()
         {
             WithArguments("--replace-existing");
