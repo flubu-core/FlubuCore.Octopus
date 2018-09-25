@@ -1,3 +1,5 @@
 .vs/
 FlubuCore.Octopus/obj/
 FlubuCore.Octopus/bin/
+BuildScript/bin/
+BuildScript/obj/

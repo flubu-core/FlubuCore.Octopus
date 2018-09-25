@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlubuCore.Octopus", "FlubuCore.Octopus\FlubuCore.Octopus.csproj", "{22CB05AF-811D-4362-8B3A-C8085628B0DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlubuCore.Octopus", "FlubuCore.Octopus\FlubuCore.Octopus.csproj", "{22CB05AF-811D-4362-8B3A-C8085628B0DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildScript", "BuildScript\BuildScript.csproj", "{F35E4CD5-B456-4CA2-BD83-DD9E0A64F741}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{22CB05AF-811D-4362-8B3A-C8085628B0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22CB05AF-811D-4362-8B3A-C8085628B0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22CB05AF-811D-4362-8B3A-C8085628B0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F35E4CD5-B456-4CA2-BD83-DD9E0A64F741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F35E4CD5-B456-4CA2-BD83-DD9E0A64F741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F35E4CD5-B456-4CA2-BD83-DD9E0A64F741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F35E4CD5-B456-4CA2-BD83-DD9E0A64F741}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
