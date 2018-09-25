@@ -10,7 +10,7 @@ Plugin adds octopus tasks to FlubuCore ``` ITaskContext ``` interface:  ``` cont
 
 Plugin adds Following tasks:
 * OctopusPackTask.cs
+* OctopusPushTask
 * OctopusCreateReleaseTask
 * OctopusDeployReleaseTask
-* OctopusPushTask
 * OctopusPromoteReleaseTask
