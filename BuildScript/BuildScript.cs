@@ -37,19 +37,19 @@ namespace BuildScript
                 .AddCoreTask(x => x.Pack().Project("FlubuCore.Octopus")
                     .NoBuild()
                     .IncludeSymbols()
-                    .OutputDirectory("../output"))
+                    .OutputDirectory("output"))
                 .Do(PublishNuGetPackage);
 
             context.CreateTarget("Rebuild")
                 .SetAsDefault()
                 .DependsOn(compile, nugetPublish);
         }
-      
+
         private static void PublishNuGetPackage(ITaskContext context)
         {
             var version = context.Properties.GetBuildVersion();
             var nugetVersion = version.ToString(3);
-            
+
             context.CoreTasks().NugetPush($"output\\FlubuCore.Octopus.{nugetVersion}.nupkg")
                 .ForMember(x => x.ApiKey("Not provided"), "nugetKey", "Nuget api key.")
                 .ServerUrl("https://www.nuget.org/api/v2/package")

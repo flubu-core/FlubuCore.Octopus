@@ -3,7 +3,7 @@ using FlubuCore.Tasks.Process;
 
 namespace FlubuCore.Octopus
 {
-    public class OctopusPackTask : ExternalProcessTaskBase<OctopusPackTask>
+    public class OctopusPackTask : ExternalProcessTaskBase<int, OctopusPackTask>
     {
         protected override string Description { get; set; }
 

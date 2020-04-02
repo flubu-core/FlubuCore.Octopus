@@ -7,7 +7,7 @@ using FlubuCore.Tasks.Process;
 
 namespace FlubuCore.Octopus
 {
-    public abstract class OctopusBaseTask<TTask> : ExternalProcessTaskBase<TTask> where TTask : class, ITask
+    public abstract class OctopusBaseTask<TTask> : ExternalProcessTaskBase<int, TTask> where TTask : class, ITask
     {
         /// <summary>
         /// The base URL for your Octopus Server - e.g., http://your-octopus/
